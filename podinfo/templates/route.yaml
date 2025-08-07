@@ -1,0 +1,12 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: demo-podinfo
+spec:
+  to:
+    kind: Service
+    name: demo-podinfo
+  port:
+    targetPort: 9898
+  tls:
+    termination: edge

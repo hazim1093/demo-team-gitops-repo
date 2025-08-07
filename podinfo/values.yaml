@@ -1,15 +1,7 @@
 podinfo:
 
   ingress:
-    enabled: true
-    className: "openshift-default"
-    annotations:
-      route.openshift.io/termination: "edge"
-    hosts:
-    - host: ""
-      paths:
-      - path: /
-        pathType: ImplementationSpecific
+    enabled: false
 
   securityContext:
     runAsNonRoot: true
