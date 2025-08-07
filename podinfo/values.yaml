@@ -2,7 +2,7 @@ podinfo:
 
   ingress:
     enabled: true
-    className: ""
+    className: "openshift-default"
     annotations:
       route.openshift.io/termination: "edge"
 
