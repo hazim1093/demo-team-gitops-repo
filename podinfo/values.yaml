@@ -5,7 +5,11 @@ podinfo:
     className: "openshift-default"
     annotations:
       route.openshift.io/termination: "edge"
-    hosts: []
+    hosts:
+    - host: ""
+      paths:
+      - path: /
+        pathType: ImplementationSpecific
 
   securityContext:
     runAsNonRoot: true
