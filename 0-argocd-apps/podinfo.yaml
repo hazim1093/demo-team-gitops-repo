@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: podinfo
+  namespace: openshift-gitops
+spec:
+  project: demo-team
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: demo-team-podinfo
+  source:
+    repoURL: "https://github.com/Region-Skane/molngruppen-gitops-test.git"
+    path: podinfo
+    targetRevision: HEAD
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true

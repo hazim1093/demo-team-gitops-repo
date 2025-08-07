@@ -1,0 +1,10 @@
+podinfo:
+  
+  ingress:
+    enabled: true
+    className: ""
+    annotations:
+      route.openshift.io/termination: "edge"
+
+  securityContext:
+    runAsNonRoot: true
