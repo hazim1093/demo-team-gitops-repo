@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
     namespace: demo-team-podinfo
   source:
-    repoURL: "https://github.com/Region-Skane/molngruppen-gitops-test.git"
+    repoURL: "https://github.com/hazim1093/demo-team-gitops-repo.git"
     path: podinfo
     targetRevision: HEAD
   syncPolicy:
