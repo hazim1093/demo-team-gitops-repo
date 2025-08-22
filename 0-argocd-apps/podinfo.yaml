@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
     namespace: demo-team-podinfo
   source:
-    repoURL: "ssh://git@ssh.github.com/hazim1093/demo-team-gitops-repo.git"
+    repoURL: "ssh://git@ssh.github.com:443/hazim1093/demo-team-gitops-repo.git"
     path: podinfo
     targetRevision: HEAD
   syncPolicy:
